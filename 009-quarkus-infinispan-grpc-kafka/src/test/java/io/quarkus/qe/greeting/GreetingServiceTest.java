@@ -15,9 +15,9 @@ public class GreetingServiceTest {
         given()
         .when().get("/hello/blocking/neo")
         .then().statusCode(200)
-                .body(is("Hello neo"));
+                .body(is("Can be blocked? true"));
     }
-    
+
     @Test
     public void testMutinyGreetingResource() {
         given()
