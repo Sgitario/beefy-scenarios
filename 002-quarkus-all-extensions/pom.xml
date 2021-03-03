@@ -547,5 +547,21 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-webjars-locator</artifactId>
         </dependency>
+        
+        <!-- TODO: Workaround for https://github.com/quarkusio/quarkus/issues/6327 -->
+        <dependency>
+            <groupId>jakarta.security.jacc</groupId>
+            <artifactId>jakarta.security.jacc-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+        <!-- end Workaround -->
     </dependencies>
 </project>
