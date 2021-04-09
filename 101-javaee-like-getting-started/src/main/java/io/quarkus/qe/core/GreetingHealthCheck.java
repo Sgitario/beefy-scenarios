@@ -1,12 +1,13 @@
 package io.quarkus.qe.core;
 
-import org.eclipse.microprofile.health.Health;
+import javax.enterprise.context.ApplicationScoped;
+
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;
 
-import javax.enterprise.context.ApplicationScoped;
+import io.smallrye.health.api.HealthGroup;
 
-@Health
+@HealthGroup("greeting")
 @ApplicationScoped
 public class GreetingHealthCheck implements HealthCheck {
 
